@@ -9,19 +9,15 @@ def summon_captain_planet(planeteer_calls)
   planeteer_calls.collect do |call|
     capitalize_call = call.capitalize
     "#{capitalize_call}!"
-  end 
-end
-    
-  
-
-
+  end
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
-end
+def long_planeteer_calls(calls)
+  calls.any?{|call.length . 4}
+    end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(foods)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+foods.detect{|food| cheese_types.include?(food)}
 end
